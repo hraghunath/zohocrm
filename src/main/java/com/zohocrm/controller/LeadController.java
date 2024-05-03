@@ -61,10 +61,11 @@ public class LeadController {
 		
 		
 	}
+	//Bug No-130
 	@RequestMapping("/listall")
 	public String listAllLeads(Model model) {
-		List<Lead> leads = leadService.getAllLeads();
-		model.addAttribute("leads", leads);
+		// List<Lead> leads = leadService.getAllLeads();
+		// model.addAttribute("leads", leads);
 		
 		return "list_leads";
 		
