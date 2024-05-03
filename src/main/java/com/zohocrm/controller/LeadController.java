@@ -70,11 +70,14 @@ public class LeadController {
 		return "list_leads";
 		
 	}
+
+	//Bug No-123
 	@RequestMapping("/leadInfo")
 	public String leadInfo(@RequestParam("id") long id,Model model) {
-			Lead lead = leadService.findLeadById(id);
 			
-			model.addAttribute("lead", lead);
+			// Lead lead = leadService.findLeadById(id);
+			
+			// model.addAttribute("lead", lead);
 			return "lead_info";
 		
 	}
